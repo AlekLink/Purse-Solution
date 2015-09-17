@@ -9,5 +9,8 @@ namespace purse.domain.DB.Models
     public class Purse
     {
         public Guid id { get; set; }
+        public string Title { get; set; }
+
+        public virtual ICollection<PurseAccount> PurseAccounts { get; set; }
     }
 }

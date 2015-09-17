@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace purse.domain.DB.Models
 {
@@ -16,5 +17,6 @@ namespace purse.domain.DB.Models
         public DateTime Birthday { get; set; }
         public DateTime RegistrationDate { get; set; }
 
+        public virtual ICollection<Purse> Purses { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace purse.domain.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "purse.domain.DB.DataContext";
         }
 
         protected override void Seed(purse.domain.DB.DataContext context)

@@ -65,8 +65,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB\DataContext.cs" />
+    <Compile Include="DB\Models\Blog.cs" />
+    <Compile Include="DB\Models\CheckingAccount.cs" />
     <Compile Include="DB\Models\Client.cs" />
-    <Compile Include="DB\Models\Role.cs" />
+    <Compile Include="DB\Models\Post.cs" />
+    <Compile Include="DB\Models\Purse.cs" />
+    <Compile Include="DB\Models\Transaction.cs" />
+    <Compile Include="DB\Models\Currency.cs" />
     <Compile Include="Migrations\201509181844226_InitialCreate.cs" />
     <Compile Include="Migrations\201509181844226_InitialCreate.Designer.cs">
       <DependentUpon>201509181844226_InitialCreate.cs</DependentUpon>
@@ -78,6 +83,34 @@
     <Compile Include="Migrations\201509181854000_v1.cs" />
     <Compile Include="Migrations\201509181854000_v1.Designer.cs">
       <DependentUpon>201509181854000_v1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509192113084_Add_Role%24ClientRole.cs" />
+    <Compile Include="Migrations\201509192113084_Add_Role%24ClientRole.Designer.cs">
+      <DependentUpon>201509192113084_Add_Role%24ClientRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509192117128_DeleteClientRole.cs" />
+    <Compile Include="Migrations\201509192117128_DeleteClientRole.Designer.cs">
+      <DependentUpon>201509192117128_DeleteClientRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509192119279_1.cs" />
+    <Compile Include="Migrations\201509192119279_1.Designer.cs">
+      <DependentUpon>201509192119279_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509192145225_NewDB.cs" />
+    <Compile Include="Migrations\201509192145225_NewDB.Designer.cs">
+      <DependentUpon>201509192145225_NewDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509192149362_NewDb_V2.cs" />
+    <Compile Include="Migrations\201509192149362_NewDb_V2.Designer.cs">
+      <DependentUpon>201509192149362_NewDb_V2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509192152437_RenameCheckingAccount.cs" />
+    <Compile Include="Migrations\201509192152437_RenameCheckingAccount.Designer.cs">
+      <DependentUpon>201509192152437_RenameCheckingAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509192200324_New_add_v3.cs" />
+    <Compile Include="Migrations\201509192200324_New_add_v3.Designer.cs">
+      <DependentUpon>201509192200324_New_add_v3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,7 +141,29 @@
     <EmbeddedResource Include="Migrations\201509181854000_v1.resx">
       <DependentUpon>201509181854000_v1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509192113084_Add_Role%24ClientRole.resx">
+      <DependentUpon>201509192113084_Add_Role%24ClientRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509192117128_DeleteClientRole.resx">
+      <DependentUpon>201509192117128_DeleteClientRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509192119279_1.resx">
+      <DependentUpon>201509192119279_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509192145225_NewDB.resx">
+      <DependentUpon>201509192145225_NewDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509192149362_NewDb_V2.resx">
+      <DependentUpon>201509192149362_NewDb_V2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509192152437_RenameCheckingAccount.resx">
+      <DependentUpon>201509192152437_RenameCheckingAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509192200324_New_add_v3.resx">
+      <DependentUpon>201509192200324_New_add_v3.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

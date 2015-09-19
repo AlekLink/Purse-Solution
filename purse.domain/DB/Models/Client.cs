@@ -11,15 +11,11 @@ namespace purse.domain.DB.Models
         public Guid id { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string LastName { get; set; }
-
         public string Email { get; set; }
-
-        public IEnumerable<Role> Roles { get; set; }
         
-        
+        public virtual ICollection<Purse> Purses { get; set; }
     }
 }

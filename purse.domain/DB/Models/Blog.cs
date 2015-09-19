@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace purse.domain.DB.Models
 {
-    public class Role
+    public class Blog
     {
         public Guid id { get; set; }
-        public string RoleName { get; set; }
+        public string Title { get; set; }
+
+
     }
 }

@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="DB\DataContext.cs" />
     <Compile Include="DB\Models\Client.cs" />
+    <Compile Include="DB\Models\Role.cs" />
     <Compile Include="Migrations\201509181844226_InitialCreate.cs" />
     <Compile Include="Migrations\201509181844226_InitialCreate.Designer.cs">
       <DependentUpon>201509181844226_InitialCreate.cs</DependentUpon>

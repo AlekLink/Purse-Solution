@@ -17,6 +17,8 @@ namespace purse.domain.DB.Models
         public string LastName { get; set; }
 
         public string Email { get; set; }
+
+        public IEnumerable<Role> Roles { get; set; }
         
         
     }

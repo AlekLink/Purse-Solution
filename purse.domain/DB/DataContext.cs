@@ -17,5 +17,6 @@ namespace purse.domain.DB
         }
 
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Role> Roles { get; set; }
     }
 }
